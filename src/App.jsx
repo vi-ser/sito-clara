@@ -1,10 +1,12 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 
+import Navbar from "./components/Navbar";
 function App() {
-  return <></>;
+  return (
+    <div className="h-dvh bg-linear-to-b from-[#95DEED] via-[#AFBAEC] to-[#ECB4E5]">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
