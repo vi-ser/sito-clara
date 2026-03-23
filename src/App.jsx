@@ -13,10 +13,10 @@ function App() {
         <div className="bg-primary-950">
           <MoreAbout />
         </div>
-      </div>
-      <div className="bg-linear-to-b from-[#ECB4E5] via-[#AFBAEC] to-[#95DEED]">
-        <MyJob />
-        <Services />
+        <div className="bg-linear-to-b from-[#ECB4E5] via-[#AFBAEC] to-[#95DEED]">
+          <MyJob />
+          <Services />
+        </div>
       </div>
     </>
   );

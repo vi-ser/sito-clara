@@ -9,31 +9,31 @@ const accordionItems = [
   {
     title: "Valutazione",
     content:
-      "La valutazione neuropsicologica permette di comprendere il funzionamento cognitivo, emotivo e comportamentale del bambino o del ragazzo.\n\nRappresenta un punto di partenza fondamentale che può offrire alla famiglia e alla scuola indicazioni utili alla costruzione di percorsi didattici personalizzati, orientati a valorizzare le risorse individuali e a sostenere le aree di maggiore difficoltà.\n\nIndividuare un Disturbo Specifico dell’Apprendimento o un Disturbo da Deficit di Attenzione e Iperattività (ADHD) costituisce il primo passo verso una quotidianità più consapevole e serena, favorendo interventi mirati e personalizzati sui bisogni del singolo.",
+      "La valutazione neuropsicologica aiuta a comprendere il funzionamento cognitivo, emotivo e comportamentale del bambino o del ragazzo.\n\nRappresenta un punto di partenza importante per offrire a famiglia e scuola indicazioni utili alla costruzione di percorsi personalizzati, capaci di valorizzare le risorse individuali e sostenere le aree di maggiore difficoltà.",
     img: clara1,
   },
   {
     title: "Potenziamento",
     content:
-      "Propongo percorsi di potenziamento personalizzati per bambini e adolescenti. Lavoriamo su: \n-abilità di lettura, scrittura e calcolo \n-comprensione del testo \n-metodo di studio \n-attenzione e autoregolazione \nIl potenziamento non è solo “allenamento scolastico”: significa aiutare il ragazzo a sperimentare maggiore efficacia, autonomia e fiducia nelle proprie capacità. \nIl lavoro coinvolge anche famiglia e scuola, perché quando adulti e professionisti collaborano, il percorso diventa più solido e coerente nel tempo.",
+      "Propongo percorsi di potenziamento personalizzati per bambini e adolescenti.\n\nLavoriamo su lettura, scrittura, calcolo, comprensione del testo, metodo di studio, attenzione e autoregolazione, con l’obiettivo di favorire maggiore efficacia, autonomia e fiducia nelle proprie capacità.",
     img: clara2,
   },
   {
     title: "Supporto psicologico",
     content:
-      "La crescita personale può riguardare qualsiasi aspetto della persona su cui sente il bisogno di lavorare: il rafforzamento dell’autostima, della motivazione, capacità decisionali e organizzative, lo di una comunicazione efficace, la gestione di ansia e stress.\nIl supporto psicologico è uno strumento che apre possibilità: uno spazio in cui esplorare la tua storia, comprendere ciò che stai vivendo, costruire nuove direzioni e possibilità di scelta. Attraverso la narrazione, l’ascolto, lo scambio di significati e lo sviluppo di un pensiero su di essi. \nOgni percorso è unico, proprio per questo non è mai predefinito; allo stesso tempo, ci sono alcune tappe fondamentali che ne garantiscono la struttura, la direzione e l’efficacia.",
+      "Il supporto psicologico offre uno spazio di ascolto e confronto per comprendere ciò che stai vivendo e dare significato alla tua esperienza.\n\nPuò aiutare a lavorare su autostima, motivazione, organizzazione, ansia, stress e capacità decisionali, costruendo nel tempo nuove possibilità di scelta e maggiore consapevolezza.",
     img: clara3,
   },
   {
     title: "Orientamento agli studi",
     content:
-      "Scegliere il proprio futuro può essere complesso, soprattutto in un contesto ricco di opportunità formative che, se da un lato offrono libertà, dall’altro possono generare confusione e smarrimento. \nL’orientamento nasce per accompagnare ragazzi e famiglie verso una scelta più consapevole e serena. Insieme è possibile esplorare interessi, attitudini e desideri, aiutando i ragazzi a riconoscere le proprie risorse e a immaginare progettualità future, individuando un percorso affine alla propria unicità. \nUn percorso possibile: non definitivo né vincolante. \nIl lavoro di orientamento coinvolge sia i ragazzi, sia i genitori, offrendo loro uno spazio di confronto per conoscere, insieme ai figli, le diverse opportunità formative presenti sul territorio, e sostenere il processo decisionale in modo condiviso.",
+      "L’orientamento accompagna ragazzi e famiglie verso una scelta scolastica più consapevole e serena.\n\nInsieme esploriamo interessi, attitudini e possibilità formative per individuare un percorso coerente con la propria unicità, sostenendo il processo decisionale senza renderlo rigido o definitivo.",
     img: clara4,
   },
   {
     title: "Collab con le scuole",
     content:
-      "Entrare nelle scuole significa entrare direttamente nel principale contesto di vita di bambini e ragazzi, diventando parte del loro contesto. \nVivo l’intervento nelle scuole come un’esperienza di arricchimento reciproco: per gli alunni, che trovano uno spazio di confronto e arricchimento su tematiche che attraversano la loro quotidianità (come le emozioni, le relazioni sociali, il bullismo, l’uso delle nuove tecnologie); per me, che mi metto in relazione con nuove generazioni, nuove idee e nuovi punti di vista. \nQuando i progetti sono rivolti a genitori e insegnanti, l’obiettivo si amplia, mirando alla costruzione di contesti educativi in cui bambini e ragazzi possano sentirsi accolti, riconosciuti e valorizzati nella loro unicità. \nOltre a informare ed educare su tematiche specifiche, l’intervento diventa uno spazio per interrogarsi sulla complessità e sulla ricchezza che abitano il contesto scolastico, per accogliere e comprendere ciò che talvolta spaventa o disorienta, anziché giudicarlo o semplificarlo.",
+      "Collaboro con le scuole attraverso progetti dedicati ad alunni, insegnanti e genitori.\n\nAffronto temi come emozioni, relazioni, bullismo e tecnologie, promuovendo contesti educativi più accoglienti, consapevoli e attenti all’unicità di bambini e ragazzi.",
     img: clara5,
   },
 ];
@@ -88,18 +88,18 @@ export default function Services() {
 
           return (
             <article key={item.title} className="group w-full md:w-fit">
-              <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-8">
+              <div className="flex flex-col-reverse gap-8 md:flex-row md:items-stretch md:gap-8">
                 <div
                   className={`overflow-hidden rounded-4xl transition-[width,height] duration-600 ease-out md:shrink-0 ${
                     isOpen
-                      ? "h-100 w-full md:w-100"
+                      ? "h-80 w-full md:w-80"
                       : "h-30 w-full md:w-60 md:group-hover:w-100"
                   }`}
                 >
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-center"
                   />
                 </div>
 
@@ -168,7 +168,7 @@ export default function Services() {
                         : "mt-0 max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="text-lg leading-relaxed text-primary-950">
+                    <div className=" leading-relaxed text-primary-950">
                       {item.content.split("\n").map((paragraph) => (
                         <p key={paragraph} className="mb-8 last:mb-0">
                           {paragraph}
