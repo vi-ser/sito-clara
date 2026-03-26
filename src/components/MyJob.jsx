@@ -4,7 +4,7 @@ import stretta from "../assets/imgs/stretta.svg";
 
 export default function MyJob() {
   return (
-    <div className="max-w-432 py-40 px-4 md:px-20 mx-auto">
+    <div className="max-w-432 py-20 md:py-40 px-4 md:px-20 mx-auto">
       <p className="playfair text-center text-2xl text-primary-950 mb-2">
         Il mio lavoro
       </p>
@@ -15,7 +15,7 @@ export default function MyJob() {
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="bg-white/85 border border-white rounded-3xl p-8 text-left shadow-2xl/10">
           <img src={diary} alt="icona diario" className="mb-4" />
-          <p className="text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
+          <p className="text-xl sm:text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
             Valutazioni neuropsicologiche
           </p>
           <p className="text-primary-950">
@@ -27,7 +27,7 @@ export default function MyJob() {
 
         <div className="bg-white/85 border border-white rounded-3xl p-8 text-left shadow-2xl/10">
           <img src={rocket} alt="icona razzo" className="mb-4" />
-          <p className="text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
+          <p className="text-xl sm:text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
             Percorsi di potenziamento
           </p>
           <p className="text-primary-950">
@@ -39,7 +39,7 @@ export default function MyJob() {
 
         <div className="bg-white/85 border border-white rounded-3xl p-8 text-left shadow-2xl/10">
           <img src={stretta} alt="icona stretta di mano" className="mb-4" />
-          <p className="text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
+          <p className="text-xl sm:text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
             Supporto <br />
             psicologico
           </p>

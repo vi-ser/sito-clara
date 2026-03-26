@@ -38,7 +38,7 @@ const stars = Array.from({ length: 5 }, (_, index) => index);
 
 export default function Reviews() {
   return (
-    <section className="max-w-432 overflow-hidden py-40 mx-auto">
+    <section className="max-w-432 overflow-hidden py-20 md:py-40 mx-auto">
       <div className="px-4 md:px-20">
         <p className="playfair text-center text-2xl text-primary-950 mb-2">
           Recensioni

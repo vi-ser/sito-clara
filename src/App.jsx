@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MoreAbout from "./components/MoreAbout";
 import MyJob from "./components/MyJob";
@@ -18,6 +19,7 @@ function App() {
           <MyJob />
           <Services />
           <Reviews />
+          <Footer />
         </div>
       </div>
     </>

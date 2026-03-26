@@ -1,7 +1,7 @@
 import clara from "../assets/imgs/clara.jpg";
 export default function About() {
   return (
-    <div className="max-w-432 py-40">
+    <div className="max-w-432 py-20 md:py-40">
       <img
         src={clara}
         alt="Clara Nannelli"
