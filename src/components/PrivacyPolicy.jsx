@@ -14,8 +14,9 @@ export default function PrivacyPolicy() {
     <LegalLayout title="Privacy Policy" updatedAt="26 marzo 2026">
       <p>
         La presente informativa descrive il trattamento dei dati personali
-        effettuato attraverso il sito web di Clara Nannelli e tramite i canali
-        di contatto indicati nel sito, ai sensi del Regolamento (UE) 2016/679
+        effettuato attraverso il sito web di Clara Nannelli, previsto
+        principalmente sul dominio claranannelli.it, e tramite i canali di
+        contatto indicati nel sito, ai sensi del Regolamento (UE) 2016/679
         ("GDPR") e della normativa italiana applicabile.
       </p>
 
@@ -63,6 +64,11 @@ export default function PrivacyPolicy() {
           Si invita a non trasmettere via email o WhatsApp dati particolari non
           strettamente necessari alla gestione del primo contatto.
         </p>
+        <p>
+          In caso di accesso tramite un dominio reindirizzato o acquistato
+          tramite provider terzi, possono inoltre essere trattati dati tecnici
+          strettamente necessari alla gestione del redirect.
+        </p>
       </Section>
 
       <Section title="Finalita e base giuridica">
@@ -104,7 +110,15 @@ export default function PrivacyPolicy() {
       <Section title="Destinatari o categorie di destinatari">
         <p>I dati possono essere trattati da:</p>
         <ul className="list-disc space-y-2 pl-5">
-          <li>fornitori di servizi tecnici, hosting e manutenzione del sito;</li>
+          <li>
+            fornitori di servizi tecnici, hosting e manutenzione del sito, tra
+            cui Google Firebase per l&apos;hosting dell&apos;applicazione web;
+          </li>
+          <li>
+            provider per la gestione del nome a dominio e di eventuali regole di
+            inoltro o redirect, tra cui Squarespace se utilizzato come registrar
+            o provider del dominio;
+          </li>
           <li>
             fornitori dei servizi di comunicazione utilizzati dall&apos;utente per
             il contatto, come provider email o WhatsApp;
@@ -118,8 +132,10 @@ export default function PrivacyPolicy() {
 
       <Section title="Trasferimento di dati verso Paesi terzi">
         <p>
-          Alcuni fornitori tecnici o di comunicazione potrebbero trattare dati
-          al di fuori dello Spazio Economico Europeo. In tali casi il trattamento
+          Alcuni fornitori tecnici o di comunicazione, inclusi servizi erogati
+          da Google Firebase o da provider internazionali collegati alla gestione
+          del dominio e delle comunicazioni, potrebbero trattare dati al di
+          fuori dello Spazio Economico Europeo. In tali casi il trattamento
           avviene nel rispetto degli articoli 44 e seguenti del GDPR, adottando,
           ove necessario, garanzie adeguate.
         </p>

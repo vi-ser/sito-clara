@@ -27,9 +27,9 @@ export default function CookiePolicy() {
 
       <Section title="Cookie utilizzati da questo sito">
         <p>
-          In base alla configurazione attuale del sito, non risultano installati
-          cookie di profilazione, marketing o strumenti di analytics di terze
-          parti lato client.
+          In base alla configurazione attuale del sito, ospitato su Google
+          Firebase, non risultano installati cookie di profilazione, marketing o
+          strumenti di analytics di terze parti lato client.
         </p>
         <p>
           Possono essere utilizzati soltanto cookie tecnici o strumenti analoghi
@@ -44,6 +44,12 @@ export default function CookiePolicy() {
           WhatsApp, non installano di per se cookie di profilazione su questo
           sito. Eventuali trattamenti successivi effettuati dai relativi servizi
           sono disciplinati dalle rispettive informative privacy e cookie.
+        </p>
+        <p>
+          Se l&apos;accesso al sito avviene tramite un dominio acquistato o gestito
+          tramite Squarespace con funzione di redirect verso il dominio
+          principale, il provider del dominio potrebbe trattare dati tecnici
+          strettamente necessari all&apos;instradamento della richiesta.
         </p>
       </Section>
 
