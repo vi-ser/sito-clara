@@ -48,12 +48,12 @@ export default function Footer() {
           </p>
           <ul className="flex gap-4">
             <li>
-              <a href="#" className="text-primary-950">
+              <a href="/#/privacy-policy" className="text-primary-950">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" className="text-primary-950">
+              <a href="/#/cookie-policy" className="text-primary-950">
                 Cookie Policy
               </a>
             </li>
