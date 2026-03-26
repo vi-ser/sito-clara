@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import MoreAbout from "./components/MoreAbout";
 import MyJob from "./components/MyJob";
 import Navbar from "./components/Navbar";
+import Reviews from "./components/Reviews";
 import Services from "./components/Services";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <div className="bg-linear-to-b from-[#ECB4E5] via-[#AFBAEC] to-[#95DEED]">
           <MyJob />
           <Services />
+          <Reviews />
         </div>
       </div>
     </>

@@ -39,7 +39,7 @@ const accordionItems = [
 ];
 
 export default function Services() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
   const [titleColumnWidth, setTitleColumnWidth] = useState(0);
   const headerRefs = useRef([]);
 
@@ -90,10 +90,10 @@ export default function Services() {
             <article key={item.title} className="group w-full md:w-fit">
               <div className="flex flex-col-reverse gap-8 md:flex-row md:items-stretch md:gap-8">
                 <div
-                  className={`overflow-hidden rounded-4xl transition-[width,height] duration-600 ease-out md:shrink-0 ${
+                  className={`overflow-hidden rounded-3xl transition-[width,height] duration-300 ease-out md:shrink-0 ${
                     isOpen
                       ? "h-80 w-full md:w-80"
-                      : "h-30 w-full md:w-60 md:group-hover:w-100"
+                      : "h-30 w-full md:w-40 lg:w-50 xl:w-60 md:group-hover:w-50 lg:group-hover:w-70 xl:group-hover:w-80"
                   }`}
                 >
                   <img
@@ -122,14 +122,14 @@ export default function Services() {
                     >
                       <div>
                         <span className="text-sm block">{index + 1}</span>
-                        <span className="block text-2xl md:whitespace-nowrap lg:text-7xl">
+                        <span className="block text-2xl md:text-3xl md:whitespace-nowrap lg:text-5xl xl:text-6xl">
                           {item.title}
                         </span>
                       </div>
                       <svg
                         aria-hidden="true"
                         viewBox="0 0 48 48"
-                        className={`mt-2 size-10 shrink-0 transition-transform duration-600 ${
+                        className={`mt-2 size-10 shrink-0 transition-transform duration-300 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       >
@@ -162,7 +162,7 @@ export default function Services() {
 
                   <div
                     id={`service-panel-${index}`}
-                    className={`overflow-hidden transition-[max-height,opacity,margin] duration-600 ease-out ${
+                    className={`overflow-hidden transition-[max-height,opacity,margin] duration-300 ease-out ${
                       isOpen
                         ? "mt-8 max-h-225 opacity-100"
                         : "mt-0 max-h-0 opacity-0"

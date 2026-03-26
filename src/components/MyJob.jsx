@@ -13,7 +13,7 @@ export default function MyJob() {
       </h2>
 
       <div className="grid gap-6 lg:grid-cols-3">
-        <div className="bg-white/85 border border-white backdrop-blur-3xl rounded-3xl p-8 text-left shadow-2xl/10">
+        <div className="bg-white/85 border border-white rounded-3xl p-8 text-left shadow-2xl/10">
           <img src={diary} alt="icona diario" className="mb-4" />
           <p className="text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
             Valutazioni neuropsicologiche
@@ -25,7 +25,7 @@ export default function MyJob() {
           </p>
         </div>
 
-        <div className="bg-white/85 border border-white backdrop-blur-3xl rounded-3xl p-8 text-left shadow-2xl/10">
+        <div className="bg-white/85 border border-white rounded-3xl p-8 text-left shadow-2xl/10">
           <img src={rocket} alt="icona razzo" className="mb-4" />
           <p className="text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
             Percorsi di potenziamento
@@ -37,7 +37,7 @@ export default function MyJob() {
           </p>
         </div>
 
-        <div className="bg-white/85 border border-white backdrop-blur-3xl rounded-3xl p-8 text-left shadow-2xl/10">
+        <div className="bg-white/85 border border-white rounded-3xl p-8 text-left shadow-2xl/10">
           <img src={stretta} alt="icona stretta di mano" className="mb-4" />
           <p className="text-3xl lg:text-2xl lg:font-medium xl:font-regular 2xl:font-light xl:text-3xl 2xl:text-4xl  text-primary-950 mb-10">
             Supporto <br />
