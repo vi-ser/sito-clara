@@ -1,34 +1,59 @@
 import { useEffect, useState } from "react";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
+  const handleNavClick = (event, targetId) => {
+    event.preventDefault();
 
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+    const target = document.getElementById(targetId);
+    if (!target) {
+      return;
+    }
+
+    const smoother = ScrollSmoother.get();
+    if (smoother) {
+      smoother.scrollTo(target, true, "top top");
+    } else {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  useEffect(() => {
+    let lastScrollY = 0;
+    const deltaThreshold = 12;
+    const hideAfter = 120;
+
+    const handleUpdate = (self) => {
+      const currentScrollY = self.scroll();
+      const delta = currentScrollY - lastScrollY;
 
       if (currentScrollY <= 24) {
         setIsVisible(true);
-      } else if (currentScrollY < lastScrollY) {
+      } else if (delta <= -deltaThreshold) {
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY) {
+      } else if (currentScrollY > hideAfter && delta >= deltaThreshold) {
         setIsVisible(false);
       }
 
       lastScrollY = currentScrollY;
     };
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    const trigger = ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: handleUpdate,
+    });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleUpdate(trigger);
+
+    return () => trigger.kill();
   }, []);
 
   return (
     <nav
-      className={`sticky top-0 z-50 px-4 pt-4 md:px-16 transition-transform duration-600 ${
+      className={`fixed top-0 left-0 right-0 z-50 px-4 pt-4 md:px-16 transition-transform duration-600 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -38,6 +63,7 @@ export default function Navbar() {
         </div>
         <a
           href="#contatti"
+          onClick={(event) => handleNavClick(event, "contatti")}
           className="lg:hidden inline-block bg-linear-to-br from-white/60 via-white/10 to-white/60 backdrop-blur-lg border border-white px-6 py-2 rounded-xl hover:scale-105 transition duration-100"
         >
           Contatti
@@ -46,6 +72,7 @@ export default function Navbar() {
           <li>
             <a
               href="#chi-sono"
+              onClick={(event) => handleNavClick(event, "chi-sono")}
               className="px-6 py-2 rounded-full border border-transparent hover:underline hover:underline-offset-4 hover:text-primary-950 transition duration-100"
             >
               Chi sono
@@ -54,6 +81,7 @@ export default function Navbar() {
           <li>
             <a
               href="#il-mio-lavoro"
+              onClick={(event) => handleNavClick(event, "il-mio-lavoro")}
               className="px-6 py-2 rounded-full border border-transparent hover:underline hover:underline-offset-4 hover:text-primary-950 transition duration-100"
             >
               Il mio lavoro
@@ -62,6 +90,7 @@ export default function Navbar() {
           <li>
             <a
               href="#servizi"
+              onClick={(event) => handleNavClick(event, "servizi")}
               className="px-6 py-2 rounded-full border border-transparent hover:underline hover:underline-offset-4 hover:text-primary-950 transition duration-100"
             >
               Servizi
@@ -70,6 +99,7 @@ export default function Navbar() {
           <li>
             <a
               href="#contatti"
+              onClick={(event) => handleNavClick(event, "contatti")}
               className="inline-block bg-linear-to-br from-white/60 via-white/10 to-white/60 backdrop-blur-lg border border-white px-6 py-2 rounded-xl hover:scale-105 transition duration-100"
             >
               Contatti

@@ -1,5 +1,23 @@
 import clara2 from "../assets/imgs/clara2.jpg";
+import { ScrollSmoother } from "gsap/all";
+
 export default function MoreAbout() {
+  const handleScrollToContacts = (event) => {
+    event.preventDefault();
+
+    const target = document.getElementById("contatti");
+    if (!target) {
+      return;
+    }
+
+    const smoother = ScrollSmoother.get();
+    if (smoother) {
+      smoother.scrollTo(target, true, "top top");
+    } else {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section className="bg-primary-950 min-h-240 max-w-432 mx-auto py-20 md:py-40 flex flex-col lg:flex-row items-center gap-16 px-4 sm:px-0">
       <img
@@ -17,7 +35,11 @@ export default function MoreAbout() {
           comprendere meglio le proprie difficoltà. Ogni persona è molto più
           della sua fatica. Il mio lavoro parte proprio da qui.
         </p>
-        <a href="#contatti" className="btn-primary">
+        <a
+          href="#contatti"
+          onClick={handleScrollToContacts}
+          className="btn-primary"
+        >
           Inizia da qui il tuo percorso
         </a>
       </div>

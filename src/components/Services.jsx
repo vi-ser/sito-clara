@@ -77,7 +77,10 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="max-w-432 py-20 md:py-40 px-4 md:px-20 mx-auto">
+    <div
+      id="servizi"
+      className="max-w-432 py-20 md:py-40 px-4 md:px-20 mx-auto"
+    >
       <h2 className="playfair text-2xl text-primary-950 mb-2">Servizi</h2>
       <div className="mt-10 space-y-4">
         {accordionItems.map((item, index) => {

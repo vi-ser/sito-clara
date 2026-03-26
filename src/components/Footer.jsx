@@ -5,7 +5,7 @@ import viserlogo from "../assets/imgs/viser-studio.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-4 pb-4 md:px-4">
+    <footer id="contatti" className="px-4 pb-4 md:px-4">
       <div className="mx-auto flex flex-col-reverse gap-8 md:flex-row max-w-432 items-start justify-between rounded-t-3xl bg-white/85 border border-white p-4  sm:p-8">
         <div className="w-full md:w-1/2 lg:w-1/3">
           <p className="text-xl font-light text-primary-950 mb-8">

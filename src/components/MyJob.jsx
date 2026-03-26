@@ -4,7 +4,10 @@ import stretta from "../assets/imgs/stretta.svg";
 
 export default function MyJob() {
   return (
-    <div className="max-w-432 py-20 md:py-40 px-4 md:px-20 mx-auto">
+    <div
+      id="il-mio-lavoro"
+      className="max-w-432 py-20 md:py-40 px-4 md:px-20 mx-auto"
+    >
       <p className="playfair text-center text-2xl text-primary-950 mb-2">
         Il mio lavoro
       </p>
